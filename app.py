@@ -1,12 +1,3 @@
-"""
-LLM-Based Build/Error-Log Summarization
-AI-powered software error analysis using Google Gemini.
-
-Author: Katakam Surya Teja
-USN: 24BTRAO017
-Department: CSE – AI Driven DevOps
-"""
-
 import os
 import time
 import streamlit as st
@@ -48,7 +39,7 @@ def get_gemini_client():
 
 def get_model_name():
     """Return the Gemini model name from env or fall back to a safe default."""
-    return os.environ.get("GEMINI_MODEL", "gemini-2.0-flash").strip()
+    return os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-preview-04-17").strip()
 
 
 def build_prompt(log_text: str) -> str:
@@ -388,3 +379,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

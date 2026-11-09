@@ -201,3 +201,4 @@ LLM-Build-Error-Log-Summarizer demonstrates the practical application of large l
 **USN:** 24BTRAO017  
 **Department:** CSE – AI Driven DevOps  
 **Academic Year:** 2026–2027
+

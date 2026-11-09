@@ -11,3 +11,4 @@ Traceback (most recent call last):
 SystemExit: Required module 'pandas' is not installed. Run: pip install pandas
 
 Process finished with exit code 1
+
