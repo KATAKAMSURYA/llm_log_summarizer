@@ -1,0 +1,51 @@
+Collecting numpy==1.24.0
+  Downloading numpy-1.24.0.tar.gz (10.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 2.1 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Building wheels for collected packages: numpy
+  Building wheel for numpy (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+
+  × Building wheel for numpy (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [35 lines of output]
+      Running from numpy source directory.
+      blas_opt_info:
+      blas_mkl_info:
+      No module named 'numpy.distutils._msvccompiler' in numpy.distutils; trying from distutils
+      customize UnixCCompiler
+      libraries mkl_rt not found in ['/usr/local/lib', '/usr/lib']
+      NOT AVAILABLE
+
+      blas_openblas_info:
+      customize UnixCCompiler
+      libraries openblas not found in ['/usr/local/lib', '/usr/lib']
+      NOT AVAILABLE
+
+      blas_blis_info:
+      customize UnixCCompiler
+      libraries blis not found in ['/usr/local/lib', '/usr/lib']
+      NOT AVAILABLE
+
+      blas_atlas_info:
+      customize UnixCCompiler
+      libraries atlas,f77blas,cblas not found in ['/usr/local/lib', '/usr/lib']
+      NOT AVAILABLE
+
+      blas_accelerate_info:
+      customize UnixCCompiler
+      FOUND:
+        libraries = []
+        library_dirs = []
+        define_macros = [('NO_ATLAS_INFO', 3), ('HAVE_CBLAS', None)]
+
+      ERROR: Failed building wheel for numpy
+  error: legacy-install-failure
+
+  × Encountered error while trying to install package.
+  ╰─> numpy
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Could not build wheels for numpy, which is required to install pyproject.toml-based projects

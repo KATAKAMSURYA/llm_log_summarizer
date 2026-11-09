@@ -1,0 +1,30 @@
+$ npm run build
+
+> my-react-app@1.0.0 build
+> tsc && vite build
+
+src/components/UserProfile.tsx:3:27 - error TS2307: Cannot find module '@/utils/formatDate' or its corresponding type declarations.
+
+3 import { formatDate } from '@/utils/formatDate';
+                            ~~~~~~~~~~~~~~~~~~~~
+
+src/components/Dashboard.tsx:5:30 - error TS2307: Cannot find module '@/hooks/useAuthStore' or its corresponding type declarations.
+
+5 import { useAuthStore } from '@/hooks/useAuthStore';
+                               ~~~~~~~~~~~~~~~~~~~~~
+
+src/pages/HomePage.tsx:8:24 - error TS2307: Cannot find module 'react-query' or its corresponding type declarations.
+
+8 import { useQuery } from 'react-query';
+                          ~~~~~~~~~~~~~
+
+Found 3 errors in 3 files.
+
+error Command failed with exit code 2.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! my-react-app@1.0.0 build: `tsc && vite build`
+npm ERR! Exit status 2
+npm ERR!
+npm ERR! Failed at the my-react-app@1.0.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
